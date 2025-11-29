@@ -66,7 +66,7 @@ const Cart = () => {
   }
 
   return (
-    <div className="Basket col-4 mx-auto border p-3 mt-5 border rounded align-items-center">
+    <div className="Basket col-md-4 col-12 mx-auto border p-3 mt-5 border rounded align-items-center">
       <h1 className="border-bottom text-left">Basket</h1>
       {fullitem.map((i) => (
         <div key={i.id}>
