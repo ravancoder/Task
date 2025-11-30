@@ -50,7 +50,7 @@ const Cart = () => {
       offerPrice = ogPrice - butteroffer;
     } else {
       itemSavings = 0;
-      offerPrice = 0;
+      offerPrice = ogPrice;
     }
     if (offerPrice < 0) offerPrice = 0;
     return {
@@ -96,7 +96,7 @@ const Cart = () => {
               </p>
             </div>
           </div>
-          {(bread && soup) || cheese || butter ? (
+          {i.itemSavings > 0 ? (
             <p className="text-end mb-0  fw-bold text-danger pb-1 border-bottom">
               Savings £{i.itemSavings.toFixed(2)}
             </p>
